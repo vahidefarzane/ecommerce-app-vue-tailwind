@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="px-3">
     <router-link :to="{name :'CategoryView'}">
       <button>Admin Category</button>
     </router-link><br>

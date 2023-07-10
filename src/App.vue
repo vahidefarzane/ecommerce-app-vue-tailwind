@@ -1,10 +1,11 @@
 <script setup>
-import {RouterLink, RouterView} from 'vue-router'
+import { RouterLink, RouterView } from 'vue-router'
+import Header from './components/Header.vue';
+
+
 </script>
 <template>
-  <RouterLink to="/admin/category/add">Add Category</RouterLink><br>
-  <RouterLink to="/admin/category">Category</RouterLink><br>
-  <RouterLink to="/admin">Admin</RouterLink>
-  <RouterView/>
+  <Header />
+  <RouterView />
 </template>
 

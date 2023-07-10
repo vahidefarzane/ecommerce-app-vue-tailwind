@@ -1,23 +1,27 @@
 <template>
-  <div class="category-box" >
-    <div @click="$emit('edit-post')">
-      <h2>{{ props.postTitle }}</h2>
-      <h3>{{ props.postBody }}</h3><br>
-      <router-link to="">
-        <button>edit</button>
-      </router-link>
+  <div class="flex flex-col justify-between w-96 h-96	border p-3 m-1">
 
-
+    <div class="flex justify-center">
+      <img :src="categoryImg" class="w-52	h-52" alt="">
     </div>
-  </div>
+    <h2>{{ categoryTitle }}</h2>
+    <p class="h-28">{{ categoryBody }}</p>
+    <router-link to="">
+      <button @click="$emit('edit-category')" class="bg-stone-400	text-white py-1 px-3 rounded-lg	">edit</button>
+    </router-link>
 
+
+
+  </div>
 </template>
 
 <script setup>
 
-const props = defineProps({
-  postTitle: String,
-  postBody: String,
+defineProps({
+  categoryTitle: String,
+  categoryBody: String,
+  categoryImg: String,
+
 })
 
 
@@ -25,8 +29,8 @@ const props = defineProps({
 
 <style scoped>
 .category-box {
-  width: 400px;
-  height: 300px;
+  width: 200px;
+  height: 400px;
   border: 1px solid grey;
   margin: 0.5rem;
   padding: 0.5rem 1rem;
@@ -36,4 +40,7 @@ const props = defineProps({
   justify-content: space-around;
 }
 
+.fghi {
+  width: 200px;
+}
 </style>

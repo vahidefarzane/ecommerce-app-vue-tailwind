@@ -3,7 +3,7 @@
     <router-link :to="{name :'CategoryView'}">
       <button>Admin Category</button>
     </router-link><br>
-    <router-link :to="{name :'CategoryView'}">
+    <router-link :to="{name :'AdminProduct'}">
       <button>Admin Products</button>
     </router-link><br>
     <router-link :to="{name :'CategoryView'}">

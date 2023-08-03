@@ -27,20 +27,3 @@ defineProps({
 
 </script>
 
-<style scoped>
-.category-box {
-  width: 200px;
-  height: 400px;
-  border: 1px solid grey;
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.fghi {
-  width: 200px;
-}
-</style>

@@ -1,5 +1,5 @@
 <template>
-<h1 class="bg-slate-500">Home Page</h1>
+<h1 class="text-center">Home Page</h1>
 </template>
 
 <script setup>
